@@ -75,4 +75,3 @@ When would you use this:
 Challenge: Write an enum for a card type. Make the example code work by adding an Enum for Suit and defining `ace` of spades!
 
 example-7.ts
-
