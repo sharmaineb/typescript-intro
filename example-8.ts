@@ -9,15 +9,25 @@
 // Be sure to include a constructor in the 
 // Kaiju class that initializes it's properties!
 
-enum KaijuType { 
-	
-}
-
-class Kaiju {
-	
+enum KaijuType {
+	Lizard = 'lizard',
+	Flying = 'flying',
+	Ape = 'ape',
+  }
+  
+  class Kaiju {
+	name: string;
+	power: number;
+	type: KaijuType;
+  
+	constructor(name: string, power: number, type: KaijuType) {
+	  this.name = name;
+	  this.power = power;
+	  this.type = type;
+	}
 }
 
 export {
 	Kaiju, 
 	KaijuType
-}
+};

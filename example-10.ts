@@ -16,16 +16,22 @@ class Person {
 
 	describe(): string {
 		return `${this.name} is ${this.age}`
-	}
-}
+	};
+};
 
 const joe = new Person('Joe', 33)
 
 // Define a Course. A Course a title: string and a units: number
 
 class Course {
-
-}
+	title: string;
+	units: number;
+  
+	constructor(title: string, units: number) {
+	  this.title = title;
+	  this.units = units;
+	};
+};
 
 // Define a Student class. Student extends Person. A Student 
 // has an array of Courses and a cohort which is: junior or senior
@@ -33,17 +39,25 @@ class Course {
 // Add enroll method that takes a Course as parameter and adds 
 // this to the course array
 
-class Student {
-
-}
-
-
+class Student extends Person {
+	courses: Course[] = [];
+	cohort: 'junior' | 'senior';
+  
+	constructor(name: string, age: number, cohort: 'junior' | 'senior') {
+	  super(name, age);
+	  this.cohort = cohort;
+	}
+  
+	enroll(course: Course): void {
+	  this.courses.push(course);
+	};
+};
 
 export default Person
 export {
 	Course, 
 	Student
-}
+};
 
 
 
