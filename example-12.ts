@@ -17,16 +17,16 @@ class MapPosition {
 	heading: Direction;
 
 	constructor() {
-		this.heading = Direction.West;
+		this.heading = Direction.North;
 		
 	};
 
 	// takes a new Direction as an argument
-	move(newDirection: Direction): void {
+	move(newDirection: Direction) {
 		// set the direction on your property 
 		this.heading = newDirection
 		// Print the new direction
-		console.log(`You are heading ${this.heading}`);
+		console.log(this.heading);
 	};
 
 	// Should return a string and print:
@@ -40,6 +40,10 @@ const location = new MapPosition()
 console.log(location.describe())
 // Might output:
 // "You are heading north"
-location.move(Direction.West);
+location.move(Direction.North);
 
 export default MapPosition;
+
+// ➜  typescript-intro-main git:(main) ✗ node example-12.js
+// You are heading North
+// North

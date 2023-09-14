@@ -13,4 +13,5 @@ console.log(answer)
 // Does it look right? 
 // What went wrong?
 
-
+// When I ran 'node example-1.js', the result was 23.99227.90499999999997.
+// The amount parameter is being converted to a string when we use the toFixed(2) method.

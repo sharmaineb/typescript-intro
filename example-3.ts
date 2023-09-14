@@ -19,3 +19,8 @@ console.log(printCopy('hello', 3));
 export {
   printCopy
 };
+
+// typescript-intro-main git:(main) ✗ node example-3.js
+// hello
+// hello
+// hello

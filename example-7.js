@@ -9,10 +9,10 @@ exports.Suit = void 0;
 // https://www.typescriptlang.org/docs/handbook/enums.html#handbook-content
 var Suit;
 (function (Suit) {
-    Suit[Suit["Hearts"] = 0] = "Hearts";
-    Suit[Suit["Diamonds"] = 1] = "Diamonds";
-    Suit[Suit["Clubs"] = 2] = "Clubs";
-    Suit[Suit["Spades"] = 3] = "Spades";
+    Suit["Hearts"] = "Hearts";
+    Suit["Diamonds"] = "Diamonds";
+    Suit["Clubs"] = "Clubs";
+    Suit["Spades"] = "Spades";
 })(Suit || (exports.Suit = Suit = {}));
 var ace = {
     suit: Suit.Hearts,

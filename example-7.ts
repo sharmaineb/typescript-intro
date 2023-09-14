@@ -7,10 +7,10 @@
 // https://www.typescriptlang.org/docs/handbook/enums.html#handbook-content
 
 enum Suit {
-	Hearts,
-	Diamonds,
-	Clubs,
-	Spades,
+	Hearts = 'Hearts',
+	Diamonds = 'Diamonds',
+	Clubs = 'Clubs',
+	Spades = 'Spades',
   }
   
   type Card = { suit: Suit; value: number };

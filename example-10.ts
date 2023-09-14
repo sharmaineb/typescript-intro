@@ -41,14 +41,14 @@ class Course {
 
 class Student extends Person {
 	courses: Course[] = [];
-	cohort: 'junior' | 'senior';
+	cohort: string[] = ['junior', 'senior'];
   
-	constructor(name: string, age: number, cohort: 'junior' | 'senior') {
+	constructor(name: string, age: number, cohort: string[]) {
 	  super(name, age);
 	  this.cohort = cohort;
 	}
   
-	enroll(course: Course): void {
+	enroll(course: Course)  {
 	  this.courses.push(course);
 	};
 };

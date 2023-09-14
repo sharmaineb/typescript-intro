@@ -53,6 +53,7 @@ var Student = /** @class */ (function (_super) {
     function Student(name, age, cohort) {
         var _this = _super.call(this, name, age) || this;
         _this.courses = [];
+        _this.cohort = ['junior', 'senior'];
         _this.cohort = cohort;
         return _this;
     }

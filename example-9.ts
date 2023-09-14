@@ -24,10 +24,7 @@ function rampage(kaiju: Kaiju, city: string): string {
 	  case KaijuType.Flying:
 		action = 'flap';
 		break;
-		
-	  default:
-		action = 'rampage';
-		break;
+
 	}
   
 	let result = `${name} ${action} over ${city} causing ${power * 10000} damage!`;
@@ -38,12 +35,17 @@ function rampage(kaiju: Kaiju, city: string): string {
 
   // Define two more monsters
   const kong = new Kaiju('King Kong', 80, KaijuType.Ape);
-  const mothra = new Kaiju('Mothra', 70, KaijuType.Flying);
+  const rodan = new Kaiju('Rodan', 70, KaijuType.Flying);
   
 
 
 console.log(rampage(gojira, 'tokyo'))
 // Set the new monsts to rampage in a city
 console.log(rampage(kong, 'San Francisco'));
-console.log(rampage(mothra, 'Manila'));
+console.log(rampage(rodan, 'Manila'));
+
+// ➜  typescript-intro-main git:(main) ✗ node example-9.js
+// Gojira burn over tokyo causing 900000 damage!
+// King Kong smash over San Francisco causing 800000 damage!
+// Rodan flap over Manila causing 700000 damage!
 

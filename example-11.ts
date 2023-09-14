@@ -1,6 +1,5 @@
 import Person, { Course, Student } from './example-10.js'
 
-
 // Amy, Bob, and Cat could be Person or Student
 // We need to add them all to an array of people. 
 // People can be either Person or Student. 
@@ -17,9 +16,9 @@ interface Human {
   age: number;
 }
 
-const amy: Human = new Student('Amy', 21, 'junior');
+const amy: Human = new Student('Amy', 21, ['junior']);
 const bob: Human = new Person('Bob', 32);
-const cat: Human = new Student('Cat', 43, 'senior');
+const cat: Human = new Student('Cat', 43, ['senior']);
 
 // Use the interface to make an array that
 // holds both types: Person and Student

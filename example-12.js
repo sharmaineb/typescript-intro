@@ -15,7 +15,7 @@ var Direction;
 // Should having a heading property type Direction
 var MapPosition = /** @class */ (function () {
     function MapPosition() {
-        this.heading = Direction.West;
+        this.heading = Direction.North;
     }
     ;
     // takes a new Direction as an argument
@@ -23,7 +23,7 @@ var MapPosition = /** @class */ (function () {
         // set the direction on your property 
         this.heading = newDirection;
         // Print the new direction
-        console.log("You are heading ".concat(this.heading));
+        console.log(this.heading);
     };
     ;
     // Should return a string and print:
@@ -39,5 +39,5 @@ var location = new MapPosition();
 console.log(location.describe());
 // Might output:
 // "You are heading north"
-location.move(Direction.West);
+location.move(Direction.North);
 exports.default = MapPosition;

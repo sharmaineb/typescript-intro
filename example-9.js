@@ -19,9 +19,6 @@ function rampage(kaiju, city) {
         case example_8_1.KaijuType.Flying:
             action = 'flap';
             break;
-        default:
-            action = 'rampage';
-            break;
     }
     var result = "".concat(name, " ").concat(action, " over ").concat(city, " causing ").concat(power * 10000, " damage!");
     return result;
@@ -29,8 +26,8 @@ function rampage(kaiju, city) {
 var gojira = new example_8_1.Kaiju('Gojira', 90, example_8_1.KaijuType.Lizard);
 // Define two more monsters
 var kong = new example_8_1.Kaiju('King Kong', 80, example_8_1.KaijuType.Ape);
-var mothra = new example_8_1.Kaiju('Mothra', 70, example_8_1.KaijuType.Flying);
+var rodan = new example_8_1.Kaiju('Rodan', 70, example_8_1.KaijuType.Flying);
 console.log(rampage(gojira, 'tokyo'));
 // Set the new monsts to rampage in a city
 console.log(rampage(kong, 'San Francisco'));
-console.log(rampage(mothra, 'Manila'));
+console.log(rampage(rodan, 'Manila'));

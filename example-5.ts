@@ -26,3 +26,8 @@ console.log(displayNutrition(snack3));
 export {
   displayNutrition
 };
+
+// ➜  typescript-intro-main git:(main) ✗ node example-5.js
+// Item: Seaweed Calories: 142
+// Item: Strawberries Calories: 234
+// Item: Chips Calories: 105

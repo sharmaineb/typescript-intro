@@ -36,3 +36,7 @@ export {
   random, 
   randomChar
 };
+
+// ➜  typescript-intro-main git:(main) ✗ node example-4.js
+// [ 75, 58, 35, 2, 25, 54 ]
+// [ 'v', 'b', 'w', 'u', 'z', 'q' ]
